@@ -1,0 +1,25 @@
+/* container size untuk page */
+#main-container{ 
+    width: 100vw;
+    height: 100vh;
+}
+
+/* margin dari body */
+body{
+    margin: 0;
+}
+
+/* block untuk dan padding navbar */
+#navbar{
+    background-color: #F9A2A2;
+    padding: 1.5rem 3rem;
+    z-index: 9999;
+}
+
+/* sizing footer di about us yang berisi no telp dll */
+#footer{
+    background-color: #F9A2A2;
+    height: 100px;
+    width: 100%;
+    padding: 0.5rem 3rem;
+  }

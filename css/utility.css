@@ -1,0 +1,534 @@
+body{
+    margin: 0;
+}
+/* utility css berisi classes untuk digunakan di html */
+/* font size untuk header 1 */
+h1{
+  font-size: 2rem;
+
+  &.alt-size{
+    font-size: 3.5rem;
+  }
+  &.alt-size-1{
+    font-size: 1.5rem;
+  }
+}
+
+/* fontsize untuk header 3 */
+.size-h3{
+  &.h3-1{
+    font-size: 1.5rem;
+  }
+}
+
+/* font size untuk header 4 */
+.size-h4{
+  &.h4-1{
+    font-size: 1rem;
+  }
+}
+
+/* fontsize untuk header 2 */
+.size-h2{
+  &.h2-1{
+    font-size: 2rem;
+  }
+}
+
+/* margin dan fontweight untuk header1-6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fit-content{
+  max-width: fit-content;
+}
+
+/* untuk flex displays */
+.flex {
+  display: flex;
+  &.flow-wrap {
+    flex-flow: wrap;
+  }
+  &.flow-column {
+    flex-flow: column;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  /* untuk kasi gap */
+  &.gap {
+    &.gap-0-5 {
+      gap: 0.25rem;
+    }
+    &.gap-1 {
+      gap: 0.5rem;
+    }
+    &.gap-1-5 {
+      gap: 0.75rem;
+    }
+    &.gap-2 {
+      gap: 1rem;
+    }
+    &.gap-2-5 {
+      gap: 1.25rem;
+    }
+    &.gap-3 {
+      gap: 1.5rem;
+    }
+    &.gap-4 {
+      gap: 2rem;
+    }
+  }
+}
+
+/* unuk text font weight, width, color, hover dll */
+.text{
+  transition: .5s;
+
+  /* Weight */
+  &.fw-700{
+    font-weight: 700;
+  }
+  &.fw-600{
+    font-weight: 600;
+  }
+  &.fw-500{
+    font-weight: 500;
+  }
+  &.fw-400{
+    font-weight: 400;
+  }
+  &.fw-200{
+    font-weight: 200;
+  }
+
+  &.text-width{
+    display: inline-block;
+    border: 2px;
+  }
+
+  &.text-width-2{
+    display: inline-block;
+    border: 1px;
+  }
+
+  &.textwidth1{
+    width: 50%;
+  }
+
+  /* Colors */
+  &.white{
+    color: #fff;
+  }
+
+  &.grey{
+    color: #6E6E6E;
+  }
+
+  /* Deco */
+  &.underline{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+
+  /* Alignment */
+  &.center{
+    text-align: center;
+  }
+
+  /* Glow */
+  &.white-glow{
+    text-shadow: 0 0 40px #fff;
+  }
+
+  /* Hover */
+  &.hover-pink:hover{
+    color: var(--shade-hover-pink);
+    text-decoration: underline;
+  }
+
+  &.box{
+    width: 250px;
+    height: 100px;
+  }
+}
+
+/* untuk button padding, color, border color, width */
+.button{
+  cursor: pointer;
+  transition: .5s;
+  &.pd-1{
+    padding: .75rem 1rem;
+
+  }
+  &.pd-2{
+    padding: .75rem 5rem;
+
+  }
+
+  &.pd-3{
+    padding: .75rem 1.75rem;
+  }
+  
+  &.bg-tp{
+    background-color: transparent;
+  }
+
+  &.bg-grey{
+    background-color: #d9d9d950;
+  }
+
+  &.bg-pink{
+    background-color: var(--primary-pink);
+
+    &:hover{
+      background-color: var(--shade-hover-pink);
+
+      &>.text{
+        color: #d3d3d3;
+      }
+    }
+  }
+
+  &.bg-pink-2{
+    background-color: var(--secondary-pink);
+
+    &:hover{
+      background-color: var(--shade-hover-pink);
+    }
+  }
+
+  &.bg-grey-2{
+    background-color: var(--primary-grey);
+
+    &:hover{
+      background-color: var(--shade-hover-grey);
+    }
+  }
+
+  /* border radius agar ujungnya tidak tajam */
+  &.rad-1{
+    border-radius: .75rem;
+  }
+
+  &.button-width{
+    width: 137px;
+    text-align: center;
+  }
+}
+
+/* class untuk padding*/
+.padding{
+  &.pad-1{
+    padding: .75rem 1rem;
+  }
+  &.pad-2{
+    padding: .75rem 5rem;
+  }
+  &.pad-3{
+    padding: .75rem 1.75rem;
+  }
+  &.pad-4{
+    padding: .5rem 1.25rem;
+  }
+  &.pad-5{
+    padding: 1rem 2.75rem;
+  }
+  &.pad-6{
+    padding: 0 1rem;
+  }
+}
+
+/* class untuk border yang dipakai pada button2 */
+.border{
+  &.border-solid{
+    border-style: solid;
+  }
+
+  &.border-w1{
+    border-width: 0.5px;
+  }
+
+  &.border-w2{
+    border-width: 1.5px;
+  }
+
+  &.border-grey{
+    border-color: grey;
+  }
+
+  &.border-tp{
+    border-color: transparent;
+  }
+
+  &.rad-1{
+    border-radius: 50px;
+  }
+
+  &.rad-2{
+    border-radius: 10px;
+  }
+
+  &.background-color{
+    background-color: #d9d9d950;
+  }
+  
+}
+
+/* margin untuk positioning */
+.margin{
+
+  &.mb-1{
+    margin-bottom: 3.5rem;
+  }
+  &.mt-1{
+    margin-top: 10px;
+  }
+  &.mt-2{
+    margin-top: 20px;
+  }
+  &.mt-3{
+    margin-top: 30px;
+  }
+  &.mt-4{
+    margin-top: 40px;
+  }
+  &.mt-5{
+    margin-top: 50px;
+  }
+  &.mt-6{
+    margin-top: 60px;
+  }
+  &.mt-7{
+    margin-top: 22rem;
+  }
+  &.mt-text{
+    margin-top: 12rem;
+  }
+  &.mt-text1{
+    margin-top: -20px;
+  }
+  &.mt-text2{
+    margin-top: -2px;
+  }
+}
+
+.position{
+  position: relative;
+}
+
+.resize{
+  &.pic-size{
+    width: 400px;
+    height: auto;
+  }
+}
+
+/* card yang dipakai di page html */
+.card{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  height: 400px;
+  width: 300px; 
+  background-color: white;
+  box-shadow: 0 5px 3px 0 #00000030;
+  border-radius: 20px;
+}
+
+.card-test{
+  display: flex;
+  align-items: start;
+  flex-flow: column;
+  height: 400px;
+  width: 300px; 
+  background-color: white;
+  box-shadow: 0 5px 3px 0 #00000030;
+  border-radius: 20px;
+}
+
+.card-1{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  height: 300px;
+  width: 400px; 
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+.card-2{
+  display: flex;
+  padding: 2rem;
+  height: 400px;
+  width: 800px;
+  background-color: #F9A2A2;
+  border-radius: 20px;
+}
+
+.card-3{
+  background-color: #F9A2A2;
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.square-img{
+  width: 94%;
+  height: 40%;
+  object-fit: cover;
+  border: 10px solid #C06060;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+
+.container-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* padding untuk card */
+.cardpadding{
+  padding: 10px;
+}
+
+/* icon image yang dipakai di mainpage */
+.image-icon{
+  width: 17%;
+  height: 25%;
+}
+
+.image-size{
+  width: auto;
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* untuk text agar mulai dari kiri */
+.left{
+  text-align: start;
+  padding: 20px;
+  z-index: 0;
+}
+
+.right{
+  padding: 20px;
+  z-index: 0;
+}
+
+/* untuk footer di about us */
+.footer{
+  position: fixed;
+  background-color: #F9A2A2;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  padding: 0.5rem 3rem;
+}
+
+.card-3 .container-1{
+  padding: 0px;
+}
+
+/* form untuk register */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form,
+.type-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* untuk input nama, email dll */
+input,
+select {
+  background-color: #f1f1f1;
+  height: 40px;
+  width: 270px;
+  padding: 0 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+/* button register now */
+.btn {
+  margin-top: 10px;
+  text-align: center;
+  padding: 8px;
+  font-family: Euclid;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 50px;
+  width: 100%;
+  letter-spacing: 1px;
+  background-color: #C06060;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* untuk warna ganti saat di hover */
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--secondary-pink);
+
+  &:hover{
+    background-color: var(--shade-hover-pink);
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}

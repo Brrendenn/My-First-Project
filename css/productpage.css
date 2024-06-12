@@ -1,0 +1,84 @@
+/* width dari section pertama */
+body, #section-1, #section-1-content{
+    width: 100vw;
+}
+
+/* size dari section kedua berisi product */
+body, #section-2, #section-2-content{
+    width: 100vw;
+    height: 70vh;
+}
+
+/* size dari section ketiga berisi product*/
+body, #section-3, #section-3-content{
+    width: 100vw;
+    height: 70vh;
+}
+
+body{
+    margin: 0;
+}
+ 
+#section-1, #section-2, #section-3{
+    position: relative;
+}
+
+/* container untuk product2 */
+#section-1-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+/* untuk center yang ada di dalam section 2 dan 3 */
+#section-2-container, #section-2-content, #section-3-container, #section-3-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* menghitung size dan padding */
+#section-2-container, #section-3-container{
+    width: calc(100vw - 6rem);
+    height: 60vh;
+}
+
+/* margin untuk header 1 */
+#section-1-content h1{
+    margin-bottom: 0.25rem;
+}
+
+/* padding untuk navbar */
+#navbar{
+    padding: 2rem 3rem;
+}
+
+/* z index agar tidak ketiban */
+#navbar-right, #navbar-left{
+    z-index: 1000;
+}
+
+/* untuk iamge yang ada di atas/bawah kiri/kanan */
+#bg-img{
+    position: absolute;
+    top: -5px;
+    width: 35vw;
+    left: -50px;
+}
+
+/* untuk card product */
+#promotion {
+    padding: 0rem 1rem;
+    z-index: 2;
+}
+
+/* untuk product2 agar dapat responsive */
+#product-section{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}

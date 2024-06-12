@@ -1,0 +1,91 @@
+/* untuk section 1 navbar */
+body, #section-1, #section-1-content {
+    width: 100vw;
+}
+
+/* sizing untuk section 2 berisi tulisan dan card product */
+body, #section-2, #section-2-content {
+    width: 100vw;
+    height: 70vh;
+}
+
+/* section 3 sizing untuk keunggulan brand */
+body, #section-3, #section-3-content {
+    width: 100vw;
+    height: 70vh;
+}
+
+/* margin dari body */
+body {
+    margin: 0;
+}
+
+#section-1, #section-2, #section-3 {
+    position: relative;
+}
+
+/* section 1 container diberi padding dari #section 1 */
+#section-1-container {
+    padding: 3rem;
+    display: flex;
+}
+
+/* section 2 container, content, 3 container, content dibuat absolute dan di center */
+#section-2-container, #section-2-content, #section-3-container, #section-3-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* section 2,3 container width calc untuk padding */
+#section-2-container, #section-3-container {
+    width: calc(100vw - 6rem);
+    height: 60vh;
+}
+
+/* untuk tulisan header 1 */
+#section-1-content h1 {
+    margin-bottom: 0.25rem;
+}
+
+/* padding navigation bar */
+#navbar {
+    padding: 2rem 3rem;
+}
+
+/* z index agar dia muncul paling depan tidak tertiban */
+#navbar-right, #navbar-left {
+    z-index: 1000;
+}
+
+/* bg img yaitu bagian atas kanan */
+#bg-img{
+    position: absolute;
+    top: -5px;
+    width: 60vw;
+    right: -5px;
+}
+
+/* food img yg berada di depan bg img */
+#food-img{
+    max-width: 60%;
+}
+
+/* promotion itu di bagian bawah yaitu yg ada gambar product */
+#promotion {
+    padding: 0rem 1rem;
+    z-index: 2;
+}
+
+/* ini berupa product2 */
+#product-section{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ini untuk gambar yang berada di dalam card */
+#image-size{
+    width: 30%;
+}
