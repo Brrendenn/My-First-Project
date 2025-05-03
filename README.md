@@ -1,4 +1,4 @@
-# 🍽️ Cateringz
+# 🍽️ CAteriNgz
 
 Welcome to my first ever web development project
 
