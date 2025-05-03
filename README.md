@@ -7,7 +7,7 @@ Welcome to my first ever web development project
 - Navigation bar with links to different sections
 - Menu section showcasing food items
 - About Us section
-- Contact form 
+- Testimonies Section
 
 ## 🛠️ Built With
 
